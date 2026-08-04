@@ -1,15 +1,22 @@
-# mcp-newsapi
+# @pipeworx/newsapi
 
-NewsAPI.org MCP.
+[NewsAPI.org](https://newsapi.org/docs) MCP — global news headlines + archive search. Free dev tier 100 req/day.
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 673+ live data sources.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1394+ live data sources.
+
+## Auth
+
+- Platform: `PLATFORM_NEWSAPI_KEY`. BYO: `?_apiKey=…`.
 
 ## Tools
 
-| Tool | Description |
-|------|-------------|
-| `top_headlines` | Current top headlines. |
-| `everything` | Archive search. |
+- `top_headlines(country?, category?, sources?, q?, pageSize?, page?)` — current top headlines
+- `everything(q?, qInTitle?, sources?, domains?, excludeDomains?, from?, to?, language?, sortBy?, pageSize?, page?)` — archive search
+- `sources(category?, language?, country?)` — news sources
+
+## Data source
+
+`https://newsapi.org/v2`
 
 ## Quick Start
 
@@ -25,7 +32,7 @@ Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 }
 ```
 
-Or connect to the full Pipeworx gateway for access to all 673+ data sources:
+Or connect to the full Pipeworx gateway for access to all 1394+ data sources:
 
 ```json
 {
@@ -49,7 +56,7 @@ The gateway picks the right tool and fills the arguments automatically.
 
 ## More
 
-- [All tools and guides](https://github.com/pipeworx-io/examples)
+- [Docs and guides](https://pipeworx.io/docs)
 - [pipeworx.io](https://pipeworx.io)
 
 ## License
