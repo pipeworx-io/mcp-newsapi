@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-newsapi",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "NewsAPI.org MCP.",
   "type": "module",
   "main": "src/index.ts",
@@ -27,6 +27,6 @@
   },
   "pipeworx": {
     "sourceHash": "v1-b54187bc2528302c4c3ecad01ac4e0098468596e938ea0653733bd420a3ef629",
-    "sourceCommit": "6182c4cfebddb94950e060b5d2fca18f18ad1aca"
+    "sourceCommit": "97740c6ee04c8acbfe7dddcacfde9e88ff2b9ca0"
   }
 }
