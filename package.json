@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-newsapi",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "NewsAPI.org MCP.",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-b54187bc2528302c4c3ecad01ac4e0098468596e938ea0653733bd420a3ef629",
-    "sourceCommit": "97740c6ee04c8acbfe7dddcacfde9e88ff2b9ca0"
+    "sourceHash": "v1-4dc8745877a5106f2a85fe0215423cff7a31455e48dbd784384498a731318ba4",
+    "sourceCommit": "774de7f685a75e02d0b828d24a7b94794102152c"
   }
 }
