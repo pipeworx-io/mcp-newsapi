@@ -1,0 +1,89 @@
+[
+  {
+    "name": "top_headlines",
+    "description": "Fetch current top news headlines from NewsAPI, filterable by `country` (ISO 2-letter), `category` (business/entertainment/health/science/sports/technology), publisher `sources`, or keyword `q`. Returns article title, description, source, URL, and published date.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "country": {
+          "type": "string"
+        },
+        "category": {
+          "type": "string"
+        },
+        "sources": {
+          "type": "string"
+        },
+        "q": {
+          "type": "string"
+        },
+        "pageSize": {
+          "type": "number"
+        },
+        "page": {
+          "type": "number"
+        }
+      }
+    }
+  },
+  {
+    "name": "everything",
+    "description": "Search the NewsAPI article archive by keyword `q`, source domains, date range (`from`/`to`), or language. Sortable by relevancy, popularity, or publishedAt. Returns article title, description, source, content snippet, URL, and published date.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "q": {
+          "type": "string"
+        },
+        "qInTitle": {
+          "type": "string"
+        },
+        "sources": {
+          "type": "string"
+        },
+        "domains": {
+          "type": "string"
+        },
+        "excludeDomains": {
+          "type": "string"
+        },
+        "from": {
+          "type": "string"
+        },
+        "to": {
+          "type": "string"
+        },
+        "language": {
+          "type": "string"
+        },
+        "sortBy": {
+          "type": "string"
+        },
+        "pageSize": {
+          "type": "number"
+        },
+        "page": {
+          "type": "number"
+        }
+      }
+    }
+  },
+  {
+    "name": "sources",
+    "description": "Return available NewsAPI publisher sources, filterable by `category`, `language`, and `country`. Returns source id, name, description, URL, and category — use source ids to filter `top_headlines` or `everything`.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "category": {
+          "type": "string"
+        },
+        "language": {
+          "type": "string"
+        },
+        "country": {
+          "type": "string"
+        }
+      }
+    }
+  }
+]
